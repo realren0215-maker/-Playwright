@@ -1,0 +1,50 @@
+login_url: "https://eo.dianping.com/login"
+account_excel: "/Users/choeinhye/Desktop/계정 엑셀 컬럼.xlsx"
+output_dir: "./downloads"
+
+# 처음에는 1~2개 매장만 테스트하세요. 전체 실행은 null 또는 큰 숫자로 변경합니다.
+test_limit: 2
+headless: false
+slow_mo_ms: 150
+timeout_ms: 30000
+manual_verification_timeout_sec: 180
+
+account_columns:
+  store: "매장명"
+  username: "아이디"
+  password: "비밀번호"
+
+date_range:
+  # 실행일 기준 해당 월 1일부터 실행일 전날까지
+  mode: "month_start_to_yesterday"
+  # 테스트용 강제 실행일. 예: "2026-07-13"; 실제 운영 시 null 유지
+  run_date: null
+
+navigation:
+  # 매뉴얼 기준: 推广营销 > 推广产品 > 推广通 > 数据报告
+  fallback_report_url: "https://eo.dianping.com/epassport/marketingmanage/promotion#menuId=1"
+  click_texts:
+    - "推广营销"
+    - "推广产品"
+    - "推广通"
+    - "数据报告"
+
+download_flow:
+  custom_date_text: "自定义"
+  download_detail_text: "下载明细"
+  popup_go_text: "前往获取"
+  download_record_text: "下载记录"
+  complete_text: "已完成"
+  row_download_text: "下载"
+  poll_download_record_sec: 90
+
+login:
+  account_tab_text: "账号登录"
+  username_placeholder: "账号"
+  password_placeholder: "密码"
+  login_button_text: "登录"
+  verification_keywords:
+    - "验证码"
+    - "安全"
+    - "滑动"
+    - "验证"
