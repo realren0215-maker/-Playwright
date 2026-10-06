@@ -1,0 +1,119 @@
+.insight-layout {
+  height: 66%;
+  margin-top: 3.5%;
+  display: grid;
+  grid-template-columns: 29% 5% 27% 5% 34%;
+  align-items: center;
+}
+
+.insight-guide {
+  background: linear-gradient(145deg, #f5f9ff, #eaf3ff);
+  border: 1px solid #d9e8fb;
+  border-radius: 14px;
+  padding: 16px 15px;
+  box-shadow: 0 12px 30px #1c5caa0b;
+}
+
+.insight-kicker {
+  font-size: 6px;
+  letter-spacing: 1.2px;
+  font-weight: 900;
+  color: #1677ff;
+}
+
+.insight-guide h3 { font-size: 15px; margin: 8px 0 7px; }
+.insight-guide > p { font-size: 9px; line-height: 1.6; color: #617087; margin: 0; }
+.guide-rule { height: 1px; background: #ceddf0; margin: 11px 0; }
+.insight-guide ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 6px; }
+.insight-guide li { display: flex; align-items: center; gap: 7px; background: #fff; border: 1px solid #dfebf8; border-radius: 8px; padding: 7px; }
+.insight-guide li b { font-size: 6px; color: #1677ff; background: #eaf3ff; width: 17px; height: 17px; border-radius: 5px; display: grid; place-items: center; }
+.insight-guide li span { font-size: 9px; font-weight: 800; }
+.insight-guide small { display: block; font-size: 7.5px; color: #7d899b; line-height: 1.5; margin-top: 9px; }
+
+.connector { height: 1px; border-top: 1px dashed #61a5ff; position: relative; }
+.connector i { position: absolute; width: 5px; height: 5px; border-radius: 50%; background: #1677ff; top: -3px; }
+.connector-left i { right: -1px; }
+.connector-right i { left: -1px; }
+
+.insight-phone { height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 6px; }
+.insight-phone .phone { height: 84%; max-height: 100%; }
+.insight-phone > span { font-size: 6.5px; font-weight: 800; color: #66738a; }
+
+.crop-column { height: 100%; display: grid; gap: 7px; }
+.crop-column.crops-2 { grid-template-rows: repeat(2, 1fr); padding: 10% 0; }
+.crop-column.crops-3 { grid-template-rows: repeat(3, 1fr); }
+.crop-card { min-height: 0; background: #f6faff; border: 1px solid #dceafb; border-radius: 10px; padding: 7px; display: grid; grid-template-columns: 47% 1fr; align-items: center; gap: 8px; }
+.crop-image { height: 100%; min-height: 0; border-radius: 6px; overflow: hidden; background: #fff; border: 1px solid #e2eaf4; }
+.crop-image img { width: 100%; height: 100%; object-fit: contain; }
+.crop-card > div:last-child { display: grid; gap: 4px; }
+.crop-card span { font-size: 5.5px; color: #1677ff; font-weight: 900; }
+.crop-card b { font-size: 7.5px; line-height: 1.35; }
+.crop-copy p { margin: 0; font-size: 6.2px; line-height: 1.45; color: #526078; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+
+.story-translation-column { height: 100%; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+.story-translation-card { background: linear-gradient(145deg, #f8fbff, #edf5ff); border: 1px solid #d9e8fb; border-radius: 11px; padding: 12px; box-shadow: 0 9px 22px #1c5caa0a; min-height: 0; }
+.story-translation-card span { display: block; color: #1677ff; font-size: 11px; font-weight: 900; margin-bottom: 8px; }
+.story-translation-card p { margin: 0; color: #3d4a60; font-size: 10px; line-height: 1.65; white-space: pre-wrap; display: -webkit-box; -webkit-box-orient: vertical; overflow: hidden; }
+.story-translation-column.cards-1 .story-translation-card p { -webkit-line-clamp: 18; }
+.story-translation-column.cards-2 .story-translation-card p { -webkit-line-clamp: 8; }
+.story-translation-column.cards-3 .story-translation-card p { -webkit-line-clamp: 5; }
+
+.translation-continuation-page .section-heading { margin-top: 5%; }
+.continuation-card { margin-top: 5%; background: linear-gradient(145deg, #f8fbff, #edf5ff); border: 1px solid #d9e8fb; border-radius: 18px; padding: 5% 6%; min-height: 58%; }
+.continuation-card > span { display: block; color: #1677ff; font-size: 16px; font-weight: 900; margin-bottom: 20px; }
+.continuation-card > p { margin: 0; color: #334158; font-size: 15px; line-height: 1.75; white-space: pre-wrap; }
+.continuation-card > small { display: block; color: #8a95a7; font-size: 9px; margin-top: 24px; }
+
+.translation-review { margin-top: 14px; border: 1px solid #dce6f3; border-radius: 12px; background: #f8fbff; padding: 13px; display: grid; gap: 10px; }
+.translation-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.translation-head > div { display: grid; gap: 3px; }
+.translation-head b { font-size: 11px; }
+.translation-head span, .translation-review small { font-size: 9px; color: #7f8b9e; }
+.translation-head button { border: 1px solid #cdddf0; border-radius: 7px; background: #fff; color: #1677ff; font-size: 9px; font-weight: 800; padding: 7px 9px; }
+.translation-head button:disabled { opacity: .55; cursor: wait; }
+.translation-review > label { display: grid; gap: 5px; }
+.translation-review > label > span { font-size: 9px; font-weight: 800; color: #526078; }
+.translation-review textarea { min-height: 66px; resize: vertical; border: 1px solid #dce4ef; border-radius: 8px; padding: 9px; background: #fff; color: #26344a; font: inherit; font-size: 10px; line-height: 1.5; outline: none; }
+.translation-review textarea:focus { border-color: #1677ff; box-shadow: 0 0 0 3px #1677ff12; }
+.translation-alert { border-radius: 7px; background: #fff4e8; color: #a96100; padding: 8px 9px; font-size: 9px; line-height: 1.45; }
+
+@media (max-width: 620px) {
+  .insight-guide { padding: 8px; }
+  .insight-guide h3 { font-size: 10px; }
+  .insight-guide > p, .insight-guide small { display: none; }
+  .insight-guide li { padding: 3px; }
+  .crop-card { padding: 3px; gap: 3px; }
+}
+
+@media print {
+  .report-page { padding: 14mm 17mm 12mm; }
+  .section-heading { margin-top: 8mm; gap: 4mm; }
+  .section-heading > span { font-size: 22pt; }
+  .section-heading h2 { font-size: 21pt; margin-bottom: 3mm; }
+  .section-heading p { font-size: 10pt; line-height: 1.45; }
+  .report-head .brand.compact { font-size: 10pt; }
+  .report-count { font-size: 8pt; }
+  .insight-layout { height: 132mm; margin-top: 7mm; grid-template-columns: 28% 4% 25% 4% 39%; }
+  .insight-guide { padding: 5mm; border-radius: 4mm; }
+  .insight-kicker { font-size: 7pt; }
+  .insight-guide h3 { font-size: 14pt; margin: 3mm 0; }
+  .insight-guide > p { font-size: 10pt; line-height: 1.55; }
+  .insight-guide li { padding: 2.2mm; gap: 2mm; }
+  .insight-guide li b { font-size: 7pt; width: 7mm; height: 7mm; }
+  .insight-guide li span { font-size: 10pt; }
+  .insight-guide small { font-size: 8pt; line-height: 1.45; margin-top: 3mm; }
+  .insight-phone .phone { height: 119mm; }
+  .insight-phone > span { font-size: 8pt; }
+  .story-translation-column { gap: 3mm; }
+  .story-translation-card { padding: 4.2mm; border-radius: 3mm; }
+  .story-translation-card span { font-size: 12pt; margin-bottom: 2.5mm; }
+  .story-translation-card p { font-size: 11.5pt; line-height: 1.62; }
+  .story-translation-column.cards-1 .story-translation-card p { -webkit-line-clamp: 12; }
+  .story-translation-column.cards-2 .story-translation-card p { -webkit-line-clamp: 6; }
+  .story-translation-column.cards-3 .story-translation-card p { -webkit-line-clamp: 4; }
+  .continuation-card { margin-top: 9mm; padding: 11mm 14mm; min-height: 125mm; }
+  .continuation-card > span { font-size: 15pt; margin-bottom: 6mm; }
+  .continuation-card > p { font-size: 12pt; line-height: 1.7; }
+  .continuation-card > small { font-size: 8pt; margin-top: 7mm; }
+  .page-foot { font-size: 7.5pt; }
+}
